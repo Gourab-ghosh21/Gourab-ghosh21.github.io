@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bignesh Kumar - Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Styles for the back button */
+        .back-button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 1.5rem;
+            color: var(--text-color);
+            margin-right: 20px; /* Space between back button and logo */
+            transition: transform 0.3s ease;
+        }
+
+        .back-button:hover {
+            transform: translateX(-5px);
+            color: var(--primary-color);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <button class="back-button" id="back-button" style="display: none;">
+            <i class="fas fa-arrow-left"></i>
+        </button>
+        <a href="home.html" class="logo">BK</a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-right">
+            <button class="theme-toggle" id="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+            <button class="mobile-menu-btn" id="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <canvas id="hero-canvas"></canvas> <!-- Canvas for Three.js background -->
+        
+        <!-- New container for hero content and image cards -->
+        <div class="hero-main-content">
+            <div class="hero-content fade-in">
+                <h1>Bignesh Kumar</h1>
+                <p class="hero-tagline">Aspiring Software Engineer | CSE @ Adamas University</p>
+                <p>Turning ideas into reality through code and creativity</p>
+                <a href="contact.html" class="hero-cta">Get In Touch</a>
+            </div>
+
+            <!-- New Image Cards Section -->
+            <div class="home-image-cards-container">
+                <!-- Image Card 1 -->
+                <div class="image-card-wrapper neon-glow fade-in">
+                    <div class="image-card-inner">
+                        <div class="image-card-front">
+                            <img src="images/bigneshkumar.jpg.png" alt="Placeholder Image 1">
+                        </div>
+                        <div class="image-card-back">
+                            <h3>My Passion</h3>
+                            <p>Exploring new technologies and building innovative solutions.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image Card 2 -->
+                <div class="image-card-wrapper neon-glow fade-in">
+                    <div class="image-card-inner">
+                        <div class="image-card-front">
+                            <img src="images/IMG20250729134805.jpg" alt="Placeholder Image 2">
+                        </div>
+                        <div class="image-card-back">
+                            <h3>My Vision</h3>
+                            <p>To contribute to impactful projects and continuously grow as an engineer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="about.html">About</a>
+                <a href="skills.html">Skills</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <p class="copyright">&copy; 2025 Bignesh Kumar. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Custom Alert Modal -->
+    <div id="custom-alert-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <p id="modal-message"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Hide back button on the home page (already in script.js, but keeping this for clarity)
+        document.addEventListener('DOMContentLoaded', () => {
+            const backButton = document.getElementById('back-button');
+            if (backButton) {
+                // This logic is now primarily handled in script.js's DOMContentLoaded listener
+                // but this ensures it's hidden on index.html specifically.
+                backButton.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
