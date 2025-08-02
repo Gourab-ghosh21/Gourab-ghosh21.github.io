@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bignesh Kumar - Hobbies</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Styles for the back button */
+        .back-button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 1.5rem;
+            color: var(--text-color);
+            margin-right: 20px; /* Space between back button and logo */
+            transition: transform 0.3s ease;
+        }
+
+        .back-button:hover {
+            transform: translateX(-5px);
+            color: var(--primary-color);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <button class="back-button" id="back-button">
+            <i class="fas fa-arrow-left"></i>
+        </button>
+        <a href="home.html" class="logo">BK</a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-right">
+            <button class="theme-toggle" id="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+            <button class="mobile-menu-btn" id="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hobbies Section -->
+    <section id="hobbies">
+        <h2 class="fade-in">Hobbies & Interests</h2>
+        <div class="hobbies-container">
+            <div class="hobby-card fade-in">
+                <i class="fas fa-gamepad"></i>
+                <h3>Problem-Solving Games</h3>
+                <p>I enjoy challenging puzzle games that require strategic thinking and problem-solving skills.</p>
+            </div>
+            
+            <div class="hobby-card fade-in">
+                <i class="fas fa-language"></i>
+                <h3>Learning Languages</h3>
+                <p>I'm passionate about learning new programming languages and exploring their unique features.</p>
+            </div>
+            
+            <div class="hobby-card fade-in">
+                <i class="fas fa-book"></i>
+                <h3>Reading</h3>
+                <p>I love reading technical books and articles to stay updated with the latest technologies.</p>
+            </div>
+            
+            <div class="hobby-card fade-in">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Coding Challenges</h3>
+                <p>Participating in coding competitions and solving algorithmic challenges to improve my skills.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="home.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="skills.html">Skills</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <p class="copyright">&copy; 2025 Bignesh Kumar. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Custom Alert Modal -->
+    <div id="custom-alert-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <p id="modal-message"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
